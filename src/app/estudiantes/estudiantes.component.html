@@ -1,0 +1,30 @@
+<h1>{{titulo}}</h1>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Apellido</th>
+        <th scope="col">Grupo/Sección</th>
+        <th scope="col">Fecha de ingreso</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let estudiante of estudiantes">
+        <th scope="row">{{estudiante.id_student}}</th>
+        <td>{{estudiante.first_name1}}</td>
+        <td>{{estudiante.last_name1}}</td>
+        <td>{{estudiante.id_group}}</td>
+        <td>{{estudiante.ingreso.substring(0,10)}}</td>
+        <td>
+          <button type="button" class="btn btn-outline-warning" 
+          [routerLink]="['registro', estudiante.id_student]">Editar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <button type="button" class="btn btn-outline-success" [routerLink]="['registro']">Nuevo Estudiante</button>
+
