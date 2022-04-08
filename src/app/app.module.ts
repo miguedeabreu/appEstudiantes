@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EstudiantesComponent } from './estudiantes/estudiantes.component';
 import { FormEstudianteComponent } from './component/form-estudiante/form-estudiante.component';
+import { HeaderComponent } from './component/header/header.component';
 
 
 const routes: Routes = [
@@ -22,7 +23,8 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     EstudiantesComponent,
-    FormEstudianteComponent
+    FormEstudianteComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

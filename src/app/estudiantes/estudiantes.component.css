@@ -1,0 +1,13 @@
+.contenedor_principal {
+    padding-left: 12vw;
+    padding-right: 12vw;
+    padding-top: 8vw;
+    padding-bottom: 2vw;
+}
+
+.titulo {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    font-size: 2vw;
+    color: var(--primary)
+}

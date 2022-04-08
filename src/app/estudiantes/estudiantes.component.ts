@@ -9,8 +9,6 @@ import { EstudianteService } from '../shared/estudiante.service';
 })
 export class EstudiantesComponent implements OnInit {
 
-  public titulo:string="Lista de estudiantes"
-
   public estudiantes: Estudiante[];
 
   constructor(private estudianteService: EstudianteService) { }

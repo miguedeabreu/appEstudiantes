@@ -1,16 +1,18 @@
-<div class="input-group flex-nowrap">
-    <input type="text" class="form-control" placeholder="Nombre" [(ngModel)]="estudiante.first_name1" 
-     aria-describedby="addon-wrapping">
-    <input type="text" class="form-control" placeholder="Apellido" [(ngModel)]="estudiante.last_name1"
-     aria-describedby="addon-wrapping">
-    <input type="number" class="form-control" placeholder="Grupo/Sección" [(ngModel)]="estudiante.id_group"
-     aria-describedby="addon-wrapping">
-    <input type="date" class="form-control" placeholder="Fecha de ingreso" [(ngModel)]="estudiante.ingreso" 
-     aria-describedby="addon-wrapping">
+<div class="contenedor_principal">
+
+    <div class="input-group flex-nowrap caja_input">
+        <input type="text" class="form-control aux_input" placeholder="Nombre" [(ngModel)]="estudiante.first_name1" 
+         aria-describedby="addon-wrapping">
+        <input type="text" class="form-control aux_input" placeholder="Apellido" [(ngModel)]="estudiante.last_name1"
+         aria-describedby="addon-wrapping">
+        <input type="text" class="form-control aux_input" placeholder="Grupo/Sección" [(ngModel)]="estudiante.id_group"
+         aria-describedby="addon-wrapping">
+        <input type="date" class="form-control aux_input" placeholder="Fecha de ingreso" [(ngModel)]="estudiante.ingreso" 
+         aria-describedby="addon-wrapping">
+    </div>
+    
+    <button type="button" class="btn btn-outline-success btn_aux" (click)='create()' *ngIf="!estudiante.id_student">Registrar Estudiante</button>
+    
+    <button type="button" class="btn btn-outline-success btn_aux" (click)='update()' *ngIf="estudiante.id_student">Actualizar Estudiante</button>
+
 </div>
-
-<button type="button" class="btn btn-outline-success" (click)='create()' *ngIf="!estudiante.id_student">Registrar</button>
-
-<button type="button" class="btn btn-outline-success" (click)='update()' *ngIf="estudiante.id_student">Actualizar</button>
-
-

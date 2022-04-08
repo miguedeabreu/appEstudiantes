@@ -1,6 +1,10 @@
-<h1>{{titulo}}</h1>
+<div class="contenedor_principal">
 
-<table class="table">
+  <button type="button" class="btn btn-outline-success" [routerLink]="['registro']">Nuevo Estudiante</button>
+
+  <h2 class="titulo">Listado de estudiantes matriculados</h2>
+
+  <table class="table">
     <thead>
       <tr>
         <th scope="col">ID</th>
@@ -8,7 +12,7 @@
         <th scope="col">Apellido</th>
         <th scope="col">Grupo/Sección</th>
         <th scope="col">Fecha de ingreso</th>
-        <th scope="col"></th>
+        <th scope="col">Editar</th>
       </tr>
     </thead>
     <tbody>
@@ -26,5 +30,5 @@
     </tbody>
   </table>
 
-  <button type="button" class="btn btn-outline-success" [routerLink]="['registro']">Nuevo Estudiante</button>
+</div>
 
